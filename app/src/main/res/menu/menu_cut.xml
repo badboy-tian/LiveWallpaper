@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cut"
+        android:icon="@drawable/ic_content_cut_white"
+        android:orderInCategory="100"
+        android:title="save"
+        app:showAsAction="always" />
+</menu>

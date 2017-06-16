@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/adView"
+                >
+                <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:id="@+id/video"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/second"
+                    android:gravity="center" />
+
+                <com.daimajia.numberprogressbar.NumberProgressBar
+                    android:id="@+id/number_progress_bar"
+                    style="@style/NumberProgressBar_Funny_Orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:progress_current="80"
+                    custom:progress_max="100"
+                    custom:progress_text_visibility="gone" />
+            </RelativeLayout>
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

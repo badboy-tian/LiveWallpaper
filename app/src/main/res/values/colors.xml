@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#4CAE50</color>-->
+    <!--<color name="colorPrimaryDark">#388D3C</color>-->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="loading_item">#ececec</color>
+    <color name="div">#BCBCBC</color>
+    <color name="first">#212121</color>
+    <color name="second">#747474</color>
+</resources>

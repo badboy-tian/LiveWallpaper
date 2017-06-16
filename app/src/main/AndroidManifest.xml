@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.i7play.videopapger">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".app.IAP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="leancloud"
+            android:value="xiaomi" />
+
+        <activity
+            android:name=".activity.CutActivity"
+            android:label=""
+            android:launchMode="singleTask" />
+
+        <service
+            android:name=".service.LiveWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:process=":wallpaper">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpager" />
+        </service>
+
+        <activity
+            android:name="com.avos.avoscloud.feedback.ThreadActivity"
+            android:launchMode="singleTask" />
+        <!-- 反馈组件 END -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_subname"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.CatchActivity"
+            android:exported="true"
+            android:label="@string/setwallpaper"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".app.MyPreferenceProvider"
+            android:authorities="com.i7play.videopapger.app.preferences"
+            android:exported="true" />
+    </application>
+
+</manifest>

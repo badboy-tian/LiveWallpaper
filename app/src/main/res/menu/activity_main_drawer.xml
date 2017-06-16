@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_locale"
+            android:icon="@drawable/ic_folder_open"
+            android:title="@string/openlocal"
+            />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_camera_alt"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/nav_cut"
+            android:icon="@drawable/ic_content_cut"
+            android:title="@string/cut" />
+    </group>
+    <item android:title="@string/shareandfeed">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/action_share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_review"
+                android:title="@string/rate" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/feedback" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline"
+                android:title="@string/about" />
+        </menu>
+    </item>
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/nav_voicechanger"
+                android:icon="@drawable/ic_apps"
+                android:title="@string/nav_voicechanger" />
+        </menu>
+    </item>
+</menu>

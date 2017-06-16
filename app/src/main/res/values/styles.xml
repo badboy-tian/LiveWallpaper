@@ -1,0 +1,32 @@
+<resources>
+    <declare-styleable name="CustomRange">
+        <attr name="nonSelectedColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="holderColor" format="color"/>
+        <attr name="holderWidth" format="dimension"/>
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+    </declare-styleable>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/colorPrimary</item>
+        <item name="fab_colorPressed">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>
