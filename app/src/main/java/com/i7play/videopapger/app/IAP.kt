@@ -27,7 +27,7 @@ class IAP : Application() {
         iap = this
         database = RemotePreferences(applicationContext, author, "main_prefs")
         //MobileAds.initialize(this, "ca-app-pub-1743332321423234~8787116708")
-        AVOSCloud.initialize(this, "Uo2QYCLwHMtsqDuVp6yitkv9-gzGzoHsz", "b7XAgPw0wUn5M2PkvwvnR7Ow")
+        AVOSCloud.initialize(this, "appid", "clientid")
         AVOSCloud.setDebugLogEnabled(true)
 
         FileDownloader.init(this)
