@@ -15,9 +15,7 @@
  ```
  新建类class:
  VideoItem, 新增列 img type video name enname like tag即可
- 
- 
- 
+ <img src="docs/5.png"/>
 ### 展示
  
 <img src="docs/4.gif" width="250px"/>
