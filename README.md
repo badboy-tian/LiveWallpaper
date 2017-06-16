@@ -1,7 +1,7 @@
 # Video LiveWallpaper
 使用视频作为壁纸。使用leancloud作为后端云存储视频. 
 可以添加一个文件选择器来选择视频文件来作为壁纸
-<a href='https://play.google.com/store/apps/details?id=com.i7play.videopapger&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.i7play.videopapger&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="100px"/></a>
  ## 特性
  * 使用kotlin开发, 多语言
  * 可以预览视频,下载视频,设置壁纸
