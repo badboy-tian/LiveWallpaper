@@ -14,8 +14,8 @@
  ```
  ## 展示
  
-<img src="docs/1.png" width="300px"/>
-<img src="docs/2.png" width="300px"/>
-<img src="docs/3.png" width="300px"/>
+<img src="docs/1.png" width="250px"/>
+<img src="docs/2.png" width="250px"/>
+<img src="docs/3.png" width="250px"/>
 <video src="docs/screenshot.mp4"/>
 
