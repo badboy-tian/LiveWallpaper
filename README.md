@@ -13,8 +13,8 @@
  AVOSCloud.initialize(this, "appkey", "clientkey")
  ```
  ## 展示
-<img src="docs/1.png" width="500px"/>
-<img src="docs/2.png" width="500px"/>
-<img src="docs/3.png" width="500px"/>
+<img src="docs/1.png" width="300px"/>
+<img src="docs/2.png" width="300px"/>
+<img src="docs/3.png" width="300px"/>
 <img src="docs/screenshot.mp4"/>
 
